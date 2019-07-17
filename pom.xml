@@ -28,12 +28,28 @@
 		</dependency>
 
 		<!-- Dependency for JSTL to be added -->
-		
-		<!-- Dependency for jaxb-api to be added(if using JDK9) -->
+	  <dependency>
+		  <groupId>jstl</groupId>
+		  <artifactId>jstl</artifactId>
+		  <version>1.2</version>
+	  </dependency>
 
-		<!-- Dependency for jaxb-impl to be added(if using JDK9) -->
+	  <!-- Dependency for jaxb-api to be added(if using JDK9) -->
+	  <dependency>
+		  <groupId>javax.xml.bind</groupId>
+		  <artifactId>jaxb-api</artifactId>
+		  <version>2.3.0</version>
+	  </dependency>
 
-		<!-- Dependency for Spring Test to be added -->
+
+	  <!-- Dependency for jaxb-impl to be added(if using JDK9) -->
+	  <dependency>
+		  <groupId>javax.xml</groupId>
+		  <artifactId>jaxb-impl</artifactId>
+		  <version>2.1</version>
+	  </dependency>
+
+	  <!-- Dependency for Spring Test to be added -->
 
 		<dependency>
 			<groupId>org.springframework</groupId>
