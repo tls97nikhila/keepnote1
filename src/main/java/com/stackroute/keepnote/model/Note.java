@@ -7,6 +7,11 @@ import java.time.LocalDateTime;
  */
 public class Note {
 
+	private int noteId;
+	private String noteTitle;
+	private String noteContent;
+	private String noteStatus;
+	private LocalDateTime createdAt;
 	/*
 	 * This class should have five fields (noteId, noteTitle, noteContent,
 	 * noteStatus and createdAt). This class should also contain the getters and
@@ -14,70 +19,59 @@ public class Note {
 	 * the user but should be always initialized with the system date
 	 */
 
-	private int noteId;
-	private String noteTitle;
-	private String noteContent;
-	private String noteStatus;
-	private LocalDateTime presentDateTime;
-
 	public Note() {
 	}
 
 	/* All the getters/setters definition should be implemented here */
 
-	public int getNoteId() {
-		return noteId;
 
+
+	@Override
+	public String toString() {
+		return null;
 	}
 
-	public void setNoteId(int intid) { this.noteId = intid;
+	public int getNoteId() {
+		return noteId;
+	}
 
+	public void setNoteId(int noteId) {
+		this.noteId = noteId;
 	}
 
 	public String getNoteTitle() {
 		return noteTitle;
 	}
 
-	public void setNoteTitle(String string) {this.noteTitle = string;
-
+	public void setNoteTitle(String noteTitle) {
+		this.noteTitle = noteTitle;
 	}
 
 	public String getNoteContent() {
 		return noteContent;
 	}
 
-	public void setNoteContent(String string) { this.noteContent = string;
-
+	public void setNoteContent(String noteContent) {
+		this.noteContent = noteContent;
 	}
 
 	public String getNoteStatus() {
 		return noteStatus;
 	}
 
-	public void setNoteStatus(String string) { this.noteStatus = string;
-
+	public void setNoteStatus(String noteStatus) {
+		this.noteStatus = noteStatus;
 	}
 
-	public LocalDateTime getLocalDateTime() {
-		return presentDateTime;
+	public LocalDateTime getCreatedAt() {
+		return createdAt;
 	}
 
-	public void setLocalDateTime() {
-		this.presentDateTime = presentDateTime.now();
-	}
-
-
-
-	/* Override the toString() method */
-
-	@Override
-	public String toString() {
-		return "Note{" +
-				"noteId=" + noteId +
-				", noteTitle='" + noteTitle + '\'' +
-				", noteContent='" + noteContent + '\'' +
-				", noteStatus='" + noteStatus + '\'' +
-				", presentDateTime=" + presentDateTime +
-				'}';
+	public void setCreatedAt(LocalDateTime createdAt) {
+		this.createdAt = createdAt;
 	}
 }
+
+
+
+
